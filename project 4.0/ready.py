@@ -53,7 +53,7 @@ def getWeather(city=None):
         name.config(text="CURRENT WEATHER")
 
         # API Key (replace with your own)
-        api_key = "8a49d853e61614da31e7900027c646dd"
+        api_key = "YOUR API KEY"
         api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
         json_data = requests.get(api).json()
         temperature = json_data['main']['temp'] - 273.15
